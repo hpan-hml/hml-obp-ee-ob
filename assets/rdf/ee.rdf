@@ -1,0 +1,455 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY ee "http://www.hpantech.com/km/obp/ee/" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.hpantech.com/km/obp/ee/"
+     xml:base="http://www.hpantech.com/km/obp/ee/"
+     xmlns:ee="http://www.hpantech.com/km/obp/ee/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.hpantech.com/km/obp/ee/">
+        <rdfs:label>Science and Technology - An Outline</rdfs:label>
+        <rdfs:seeAlso rdf:resource="&ee;OBP_EE"/>
+        <owl:imports rdf:resource="http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/Algebra -->
+
+    <owl:NamedIndividual rdf:about="&ee;Algebra">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Algebra</skos:prefLabel>
+        <skos:narrowerTransitive rdf:resource="&ee;LinearAlgebra"/>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/AtomicMass -->
+
+    <owl:NamedIndividual rdf:about="&ee;AtomicMass">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Atomic Mass</skos:prefLabel>
+        <skos:broaderTransitive rdf:resource="&ee;AtomicStruct"/>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/AtomicStruct -->
+
+    <owl:NamedIndividual rdf:about="&ee;AtomicStruct">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Atomic Structure</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+        <skos:narrowerTransitive rdf:resource="&ee;SubatomicCharge"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/AutomCtrl -->
+
+    <owl:NamedIndividual rdf:about="&ee;AutomCtrl">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Automation and Control</skos:prefLabel>
+        <skos:narrowerTransitive rdf:resource="&ee;Automation"/>
+        <skos:narrowerTransitive rdf:resource="&ee;CtrlTheory"/>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/Automation -->
+
+    <owl:NamedIndividual rdf:about="&ee;Automation">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Automation</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/BooleanLogic -->
+
+    <owl:NamedIndividual rdf:about="&ee;BooleanLogic">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Boolean Logic</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/Computation -->
+
+    <owl:NamedIndividual rdf:about="&ee;Computation">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Computation</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/CtrlTheory -->
+
+    <owl:NamedIndividual rdf:about="&ee;CtrlTheory">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Control Theory</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/DifferentialCalc -->
+
+    <owl:NamedIndividual rdf:about="&ee;DifferentialCalc">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Differential Calculus</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/DigitalNetworking -->
+
+    <owl:NamedIndividual rdf:about="&ee;DigitalNetworking">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Digital Networking</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/EEAPP -->
+
+    <owl:NamedIndividual rdf:about="&ee;EEAPP">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Practical Applications in Electrical Engineering</skos:prefLabel>
+        <skos:narrowerTransitive rdf:resource="&ee;AutomCtrl"/>
+        <skos:narrowerTransitive rdf:resource="&ee;Computation"/>
+        <skos:narrowerTransitive rdf:resource="&ee;DigitalNetworking"/>
+        <skos:narrowerTransitive rdf:resource="&ee;Modeling"/>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+        <skos:narrowerTransitive rdf:resource="&ee;RadioCommunic"/>
+        <skos:narrowerTransitive rdf:resource="&ee;Sensing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/Electrodynamics -->
+
+    <owl:NamedIndividual rdf:about="&ee;Electrodynamics">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Electrodynamics</skos:prefLabel>
+        <skos:narrowerTransitive rdf:resource="&ee;Electromagnetism"/>
+        <skos:narrowerTransitive rdf:resource="&ee;Luminosity"/>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/Electromagnetism -->
+
+    <owl:NamedIndividual rdf:about="&ee;Electromagnetism">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Electromagnetism</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/ElectronCharge -->
+
+    <owl:NamedIndividual rdf:about="&ee;ElectronCharge">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Electron Charge</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/Energy -->
+
+    <owl:NamedIndividual rdf:about="&ee;Energy">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Energy</skos:prefLabel>
+        <skos:narrowerTransitive rdf:resource="&ee;Electrodynamics"/>
+        <skos:semanticRelation rdf:resource="&ee;Matter"/>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/GameTheory -->
+
+    <owl:NamedIndividual rdf:about="&ee;GameTheory">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Game Theory</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+        <skos:semanticRelation rdf:resource="&ee;Probability"/>
+        <skos:semanticRelation rdf:resource="&ee;Statistics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/Geometry -->
+
+    <owl:NamedIndividual rdf:about="&ee;Geometry">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Geometry</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+        <skos:narrowerTransitive rdf:resource="&ee;Topology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/InformationTheory -->
+
+    <owl:NamedIndividual rdf:about="&ee;InformationTheory">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Information Theory</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/LOGICSMATHS -->
+
+    <owl:NamedIndividual rdf:about="&ee;LOGICSMATHS">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Logic and Mathematics</skos:prefLabel>
+        <skos:narrowerTransitive rdf:resource="&ee;Algebra"/>
+        <skos:narrowerTransitive rdf:resource="&ee;BooleanLogic"/>
+        <skos:narrowerTransitive rdf:resource="&ee;DifferentialCalc"/>
+        <skos:narrowerTransitive rdf:resource="&ee;Geometry"/>
+        <skos:narrowerTransitive rdf:resource="&ee;InformationTheory"/>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+        <skos:narrowerTransitive rdf:resource="&ee;Probability"/>
+        <skos:narrowerTransitive rdf:resource="&ee;Statistics"/>
+        <skos:narrowerTransitive rdf:resource="&ee;TypeTheory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/LinearAlgebra -->
+
+    <owl:NamedIndividual rdf:about="&ee;LinearAlgebra">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Linear Algebra</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/Luminosity -->
+
+    <owl:NamedIndividual rdf:about="&ee;Luminosity">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Luminosity</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/Mass -->
+
+    <owl:NamedIndividual rdf:about="&ee;Mass">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Mass</skos:prefLabel>
+        <skos:narrowerTransitive rdf:resource="&ee;AtomicMass"/>
+        <skos:narrowerTransitive rdf:resource="&ee;MolarMass"/>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/Matter -->
+
+    <owl:NamedIndividual rdf:about="&ee;Matter">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Matter</skos:prefLabel>
+        <skos:narrowerTransitive rdf:resource="&ee;AtomicStruct"/>
+        <skos:semanticRelation rdf:resource="&ee;Energy"/>
+        <skos:narrowerTransitive rdf:resource="&ee;Mass"/>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/Modeling -->
+
+    <owl:NamedIndividual rdf:about="&ee;Modeling">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Modeling</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+        <skos:semanticRelation rdf:resource="&ee;TypeTheory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/MolarMass -->
+
+    <owl:NamedIndividual rdf:about="&ee;MolarMass">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Molar Mass</skos:prefLabel>
+        <skos:semanticRelation rdf:resource="&ee;AtomicMass"/>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/NeutronCharge -->
+
+    <owl:NamedIndividual rdf:about="&ee;NeutronCharge">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Neutron Charge</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/OBP_EE -->
+
+    <owl:NamedIndividual rdf:about="&ee;OBP_EE">
+        <rdf:type rdf:resource="&skos;ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/PHYS -->
+
+    <owl:NamedIndividual rdf:about="&ee;PHYS">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:label xml:lang="en">Basic Principles/Concepts Developed of Physical Sciences (Physics)</rdfs:label>
+        <skos:prefLabel xml:lang="en">Physics</skos:prefLabel>
+        <skos:narrowerTransitive rdf:resource="&ee;Energy"/>
+        <skos:narrowerTransitive rdf:resource="&ee;Matter"/>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/Probability -->
+
+    <owl:NamedIndividual rdf:about="&ee;Probability">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Probability</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+        <skos:semanticRelation rdf:resource="&ee;Statistics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/ProtonCharge -->
+
+    <owl:NamedIndividual rdf:about="&ee;ProtonCharge">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Proton Charge</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/RadioCommunic -->
+
+    <owl:NamedIndividual rdf:about="&ee;RadioCommunic">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Radio Communications</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/SCITECH -->
+
+    <owl:NamedIndividual rdf:about="&ee;SCITECH">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Science and Technology</skos:prefLabel>
+        <skos:narrowerTransitive rdf:resource="&ee;EEAPP"/>
+        <skos:narrowerTransitive rdf:resource="&ee;LOGICSMATHS"/>
+        <skos:topConceptOf rdf:resource="&ee;OBP_EE"/>
+        <skos:narrowerTransitive rdf:resource="&ee;PHYS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/Sensing -->
+
+    <owl:NamedIndividual rdf:about="&ee;Sensing">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Sensing</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/Statistics -->
+
+    <owl:NamedIndividual rdf:about="&ee;Statistics">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Statistics</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+        <skos:semanticRelation rdf:resource="&ee;Probability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/SubatomicCharge -->
+
+    <owl:NamedIndividual rdf:about="&ee;SubatomicCharge">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Charges of Subatomic Particles</skos:prefLabel>
+        <skos:narrowerTransitive rdf:resource="&ee;ElectronCharge"/>
+        <skos:narrowerTransitive rdf:resource="&ee;NeutronCharge"/>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+        <skos:narrowerTransitive rdf:resource="&ee;ProtonCharge"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/Topology -->
+
+    <owl:NamedIndividual rdf:about="&ee;Topology">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Topology</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hpantech.com/km/obp/ee/TypeTheory -->
+
+    <owl:NamedIndividual rdf:about="&ee;TypeTheory">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Type Theory</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ee;OBP_EE"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
